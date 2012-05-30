@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec"
   s.add_runtime_dependency "rest-client"
  
-  s.files        = Dir.glob("{bin,lib}/**/*") + %w(LICENSE README.md)
+  s.files        = Dir.glob("{bin,lib}/**/*") + %w(README.md)
   s.require_path = 'lib'
 end

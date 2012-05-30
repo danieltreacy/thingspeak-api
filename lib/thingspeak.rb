@@ -1,3 +1,6 @@
+require 'thingspeak/version'
 require 'thingspeak/paths'
+require 'thingspeak/exceptions'
+require 'thingspeak/request'
 require 'thingspeak/update'
 require 'thingspeak/client'
