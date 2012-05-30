@@ -5,20 +5,20 @@ This is a Ruby wrapper for interacting with the ThingSpeak REST API from Ruby pr
 
 To use, simply include it in your Gemfile:
 
-    # gem 'thingspeak-api'
+    gem 'thingspeak-api'
 
 or install from the command line:
 
-    # gem install 'thingspeak-api'
+    gem install 'thingspeak-api'
 
 Create a client with your read key and write key and send a message to your channel:
 
 ```ruby
-require 'thingspeak-api'
+require 'thingspeak'
 
-client = ThingSpeak::Client.new("YOUR_READ_KEY", "YOUR_WRITE_KEY")
+client = ThingSpeak::Client.new("YOUR_WRITE_KEY", "YOUR_READ_KEY")
 
-client.update_channel({param1: "foo", param2: "bar"})
+client.update_channel({field1: "foo", field2: "bar"})
 
 ```
 
