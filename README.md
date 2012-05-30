@@ -3,6 +3,8 @@ ThingSpeak API
 
 This is a Ruby wrapper for interacting with the ThingSpeak REST API from Ruby programs.
 
+**NOTE: This gem is still prerelease and under development.**
+
 To use, simply include it in your Gemfile:
 
     gem 'thingspeak-api'
