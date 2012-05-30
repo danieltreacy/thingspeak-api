@@ -1,5 +1,5 @@
 module ThingSpeak
-	module Exceptions
+  module Exceptions
 
-	end
+  end
 end

@@ -12,7 +12,7 @@ describe ThingSpeak::Client do
 		expected_params = {foo:"bar", bar:"foo", key: ThingSpeak::WriteKey}
 
 		@rest_client.stub(:post).and_return("response")
-		@rest_client.should_receive(:post).with(ThingSpeak::THINGSPEAK_UPDATE_URL, expected_params)
+    @rest_client.should_receive(:post).with(ThingSpeak::THINGSPEAK_UPDATE_URL, expected_params)
 
 		response = @client.update_channel(ThingSpeak::Update.new({foo:"bar", bar:"foo"}))
 
