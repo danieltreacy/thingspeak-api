@@ -1,7 +1,8 @@
 ThingSpeak API
 ==============
 
-This is a Ruby wrapper for interacting with the ThingSpeak REST API from Ruby programs.
+This is a Ruby wrapper for interacting with the ThingSpeak (http://www.thingspeak.com) REST API from Ruby programs.
+API docs for ThingSpeak can be found at http://community.thingspeak.com/documentation/api/
 
 **NOTE: This gem is still prerelease and under development.**
 
@@ -20,7 +21,8 @@ require 'thingspeak'
 
 client = ThingSpeak::Client.new("YOUR_WRITE_KEY", "YOUR_READ_KEY")
 
-client.update_channel({field1: "foo", field2: "bar"})
+# post an update to your channel, returns the identifier of the new post if successful
+client.update_channel({field1: "foo", field2: "bar"}) # => 3
 
 ```
 
