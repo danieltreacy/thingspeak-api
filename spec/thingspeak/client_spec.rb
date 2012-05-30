@@ -9,7 +9,7 @@ describe ThingSpeak::Client do
 	end
 
 	it "should construct the params based on a given ThingSpeak::Update object" do
-		expected_params = {foo:"bar", bar:"foo", key: ThingSpeak::WriteKey}
+    expected_params = {foo:"bar", bar:"foo", key: ThingSpeak::WriteKey}
 
 		@rest_client.stub(:post).and_return("response")
     @rest_client.should_receive(:post).with(ThingSpeak::THINGSPEAK_UPDATE_URL, expected_params)
