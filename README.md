@@ -2,7 +2,7 @@ ThingSpeak API
 ==============
 
 This is a Ruby wrapper for interacting with the ThingSpeak (http://www.thingspeak.com) REST API from Ruby programs.
-API docs for ThingSpeak can be found at http://community.thingspeak.com/documentation/api/
+API docs for ThingSpeak can be found at http://community.thingspeak.com/documentation/api/.
 
 **NOTE: This gem is still prerelease and under development.**
 
